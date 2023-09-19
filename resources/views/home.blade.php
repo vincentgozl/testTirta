@@ -107,7 +107,7 @@
                         <h6 class="collapse-header">Option</h6>
                         <a class="collapse-item" href="{{ route('transaksi.index') }}">All Transaksi</a>
                         <a class="collapse-item" href="{{ route('transaksi.create') }}">Tambah Transaksi</a>
-                        <a class="collapse-item" href="{{ route('transaksi.edit') }}">Update Transaksi</a>
+                        {{-- <a class="collapse-item" href="{{ route('transaksi.edit') }}">Update Transaksi</a> --}}
                     </div>
                 </div>
             </li>
