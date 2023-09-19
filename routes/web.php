@@ -14,5 +14,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
+
+Route::resource('toko', 'App\Http\Controllers\TokoController');
+Route::resource('transaksi', 'App\Http\Controllers\TransaksiController');
+Route::resource('areasales', 'App\Http\Controllers\AreaSalesController');
+Route::resource('sales', 'App\Http\Controllers\SalesController');
+
+Route::get('/exp-transaksi', 'TransaksiController@exportTransaksi')->name('exp-transaksi');
+Route::get('/generate-pdf', 'TransaksiController@generatePDF')->name('generate-pdf');
+
+
